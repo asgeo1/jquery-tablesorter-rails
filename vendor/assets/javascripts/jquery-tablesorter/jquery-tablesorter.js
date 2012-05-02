@@ -846,7 +846,7 @@
 	ts.addParser({
 		id: "currency",
 		is: function(s) {
-			return (/^\(?[\u00a3$\u20ac\u00a4\u00a5\u00a2?.]/).test(s); // г$Адев?.
+			return (/^\(?[\u00a3$\u20ac\u00a4\u00a5\u00a2?.]/).test(s); // ?$?????.
 		},
 		format: function(s) {
 			return $.tablesorter.formatFloat(s.replace(/[^0-9,. \-()]/g, ""));
